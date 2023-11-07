@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TipTop Shoes - Home</title>
+    <style>
+        /* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif; /* Change the font-family to Arial or another professional sans-serif font */
+    text-transform: uppercase; /* Uppercase the text for a professional look */
+    letter-spacing: 1px; /* Add a bit of letter spacing for clarity */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Style the logo */
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Style the main content */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the banner section */
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+
+.product:hover {
+    transform: scale(1.05); 
+}
+
+.featured-products {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product .price {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.product a {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.product a:hover {
+    background-color: #e55300;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the search bar */
+.search-bar input {
+    padding: 5px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style for the cart button */
+.cart-button a {
+    text-decoration: none;
+}
+
+.cart-button img {
+    width: 50px;
+    height: 30px;
+}
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sections a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+.sections a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category {
+    flex-basis: calc(25% - 20px);
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
+}
+
+.category h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category li {
+    margin: 10px 0;
+    display: block; 
+}
+
+.category a {
+    color: #fff;
+    text-decoration: none;
+    display: block; 
+}
+
+.category a:hover {
+    text-decoration: underline;
+}
+
+.category img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="TipTop Shoes Logo"></a>
+        </div>
+        <div class="sections">
+            <a href="womens.html">WOMEN</a> 
+            <a href="kids.html">KIDS</a>     
+            <a href="mens.html">MEN</a>       
+            <a href="sale.html">SALE</a> 
+        </div>
+        <div class="top-left">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="cart-button">
+                <a href="cart.html"><img src="cart.png" alt="Shopping Cart"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Welcome to TipTop Shoes</h1>
+            <p>Discover the perfect pair of shoes for every occasion.</p>
+        </section>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product">
+                <img src="shoe1.png" alt="Shoe 1">
+                <h3>Stylish Sneakers</h3>
+                <p>Classic sneakers for casual wear.</p>
+                <p class="price">$69.99</p>
+                <a href="products.html">View Details</a>
+            </div>
+            <div class="product">
+                <img src="shoe2.png" alt="Shoe 2">
+                <h3>Elegant Boots</h3>
+                <p>Stylish boots for any outfit.</p>
+                <p class="price">$89.99</p>
+                <a href="products.html">View Details</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-categories">
+            <div class="category">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping and Delivery</a></li>
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns and Refunds</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Legal Information</h3>
+                <ul>
+                    <li><a href="TermsandConditions.html">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">All Stores</a></li>
+                    <li><a href="#">About TipTop Shoes</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="https://www.youtube.com"><img src="youtube.png" alt="YouTube"> YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
